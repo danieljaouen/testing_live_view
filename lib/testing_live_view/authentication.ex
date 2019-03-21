@@ -101,4 +101,8 @@ defmodule TestingLiveView.Authentication do
   def change_user(%User{} = user) do
     User.changeset(user, %{})
   end
+
+  def change_user(%User{} = user, user_params) do
+    user |> User.changeset(user_params)
+  end
 end

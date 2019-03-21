@@ -19,6 +19,7 @@ defmodule TestingLiveViewWeb.Router do
 
     get "/", PageController, :index
 
+    live "/users/new", UserLive.New
     resources "/users", UserController
   end
 
