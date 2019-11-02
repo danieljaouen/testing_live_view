@@ -9,7 +9,8 @@ defmodule TestingLiveViewWeb.UserLive.New do
   def mount(_session, socket) do
     {
       :ok,
-      assign(socket,
+      assign(
+        socket,
         %{
           count: 0,
           changeset: Authentication.change_user(%User{})
